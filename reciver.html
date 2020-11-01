@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		input[type=text]{
+			width: 15%;
+			border: 2px solid black;
+			border-radius: 7px;
+			margin: 8px 0px;
+			outline: none;
+			padding: 8px;
+			box-sizing: border-box;
+			transition: 3s;
+		}
+        input[type=number]{
+			width: 15%;
+			border: 2px solid black;
+			border-radius: 4px;
+			margin: 8px 0px;
+			outline: none;
+			padding: 8px;
+			box-sizing: border-box;
+			transition: 3s;
+		}
+      .aalu{
+       text-decoration: underline;
+      }
+       input[type=button]{
+			width: 15%;
+			border: 2px solid black;
+			border-radius: 4px;
+			margin: 8px 0px;
+			outline: none;
+			padding: 8px;
+			box-sizing: border-box;
+			transition: 3s;
+		}
+		body{
+			background-image: url(images/aalu.jpg);
+			background-size: cover; 
+			width: 100% no-repeat;
+		}
+
+	</style>
+</head>
+<body style="text-align: center;">
+  <h1 class="aalu"><b>Reciver Form</b></h1>
+  <form>
+  	<h2><b>Name:</b></h2>
+  	<input type="text" name="name" placeholder="enter your name.." required><br>
+ 
+  	<h2><b> Required Blood Group:</b></h2>
+  	<select>
+    <option value="A +ve" name:"bloodgroup">A +ve</option>
+    <option value="B +ve" name:"bloodgroup">B +ve</option>
+    <option value="AB +ve" name:"bloodgroup">AB +ve</option>
+    <option value="O +ve" name:"bloodgroup">O +ve</option>
+    <option value="A -ve" name:"bloodgroup">A -ve</option>
+    <option value="B -ve" name:"bloodgroup">B -ve</option>
+    <option value="AB -ve" name:"bloodgroup">AB -ve</option>
+    <option value="O -ve" name:"bloodgroup">O -ve</option>
+    </select>
+    
+  
+    <h2><b>Contact:</b></h2>
+  	<input type="text" name="contact" placeholder="enter contact number.." required><br>
+    <h2><b>Location:</b></h2>
+  	<input type="text" name="location" placeholder="enter current location.." required><br><br>
+  	<button type="button" onclick="alert('Form submitted')" name="submit" style=" width: 5%;
+  	         height: 4%;
+			border: 2px solid black;
+			border-radius: 4px;"><b>Submit</b></button>
+  </form>
+</body>
+</html>
